@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+<script type="text/javascript" src="./js/jquery-1.4.4.min.js"></script>
+<script type="text/javascript" src="./js/jquery.kinMaxShow-1.0.min.js"></script>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+<script type="text/javascript">
+	$(function(){
+		$("#kinMaxShow").kinMaxShow(
+		{
+			height:100,
+			 button:{
+				switchEvent:'click',
+				showIndex:false,
+				normal:{width:'51px',height:'36px',lineHeight:'51px',right:'210px',bottom:'16px',fontSize:'12px',opacity:0.7,background:"#666666",border:"3px solid rgba(255,255,255,.6)",color:"#CCCCCC",marginRight:'6px',margin:'3px 5px'},
+				focus:{background:"#FFA",border:"1px solid rgba(255,255,255,.9)",color:"#FFF"}
+			}
+		});
+	});
+</script>
+<title>this is title</title>
+</head>
+<body>
+<div id="page">
+<div id="header">
+	<div class="top">
+		<div class="top_info"></div>
+		<div class="top_info">今日天气：晴~</div>
+		<div class="top_info">时间：2014年10月</div>
+	</div><!--top-->
+	<div class="banner"><img src="./img/banner.png"/></div><!--banner-->
+	<div class="menu">
+		<div class="menu_box">
+			<div class="menu_item"><a href="#">首页</a></div>
+			<div class="menu_item"><a href="#">首页菜单菜单菜单</a></div>
+			<div class="menu_item"><a href="#">首页</a></div>
+			<div class="menu_item"><a href="#">首页</a></div>
+			<div class="menu_item"><a href="#">首页</a></div>
+			<div class="menu_item"><a href="#">首页</a></div>
+			<div class="menu_item"><a href="#">首页</a></div>
+		</div><!--menu box-->
+	</div><!--menu-->
+</div><!--#header-->
+<div class="blk10"></div>
+<div id="main">
+	<div class="board">
+		<div class="anounceboard">
+			<div class="anounceheader">公告板(need to design)</div>
+			<div class="anouncebody">姓名：李百顺<br>性别：男<br>年龄：25岁<br>地址：山东省济南市长清区<br></div>
+		</div><!--anounceboard-->
+		<div id="show">
+			<div id="kinMaxShow">
+				<div>
+					<a href="#"><img src="images/demo_default_images/1.jpg" /></a>
+				</div>
+				<div>
+					<a href="#"><img src="images/demo_default_images/2.jpg"  /></a>
+				</div>
+				
+				<div>
+					<a href="#"><img src="images/demo_default_images/3.jpg"   /></a>
+				</div>
+				
+				<div>
+					<a href="#"><img src="images/demo_default_images/4.jpg"   /></a>
+				</div>
+
+				<div>
+					<a href="#" "><img src="images/demo_default_images/5.jpg"   /></a>
+				</div>
+
+				<div>
+					<a href="#"><img src="images/demo_default_images/6.jpg"   /></a>
+				</div>
+			</div><!--#kinMaxShow-->
+		</div><!--slider-->
+	</div><!--pad-->
+</div><!--#main-->
+</div><!--#page-->
+</body>
+</html>
